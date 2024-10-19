@@ -40,7 +40,7 @@ const App: React.FC = () => {
         </div>
       )}
       <div style={{  textAlign: 'center'  }}>
-          <h1 style={{  color: 'green', fontSize: '4rem'  }}>The Leafy Plate</h1>
+          <h1 style={{  color: 'green', fontSize: '6rem'  }}>The Leafy Plate</h1>
           <Button label="Press for express lettuce delivery" onClick={handleClick} />
       </div>
     </div>
@@ -48,3 +48,4 @@ const App: React.FC = () => {
 };
 
 export default App;
+
