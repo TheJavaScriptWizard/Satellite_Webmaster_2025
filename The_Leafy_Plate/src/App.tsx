@@ -33,7 +33,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ padding: '90px' }}>
+    <div style={{ padding: '3rem' }}>
       {showConfetti && (
         <div className={`confetti-container ${fadeOut ? 'fade-out' : ''}`}>
           <Confetti width={windowWidth} height={windowHeight} />
