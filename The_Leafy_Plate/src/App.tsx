@@ -33,14 +33,14 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div style={{ padding: '90px' }}>
+    <div style={{ padding: '3rem' }}>
       {showConfetti && (
         <div className={`confetti-container ${fadeOut ? 'fade-out' : ''}`}>
           <Confetti width={windowWidth} height={windowHeight} />
         </div>
       )}
       <div style={{  textAlign: 'center'  }}>
-          <h1 style={{  color: 'green', fontSize: '96px'  }}>The Leafy Plate</h1>
+          <h1 style={{  color: 'green', fontSize: '4rem'  }}>The Leafy Plate</h1>
           <Button label="Press for express lettuce delivery" onClick={handleClick} />
       </div>
     </div>
