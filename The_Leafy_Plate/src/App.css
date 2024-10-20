@@ -1,20 +1,48 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: vw/vh;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure full height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: vw/vh;
+    
+    height: 100%;
+    display: flex; /* Optional: to help center content */
+    flex-direction: column; /
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.redButton {
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    color: black;
+    font-size: 5rem;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .confetti-container {
-  transition: opacity 1s ease; /* Match this duration to the timeout duration */
+    transition: opacity 1s ease; /* Match this duration to the timeout duration */
 }
 
 .confetti-container.fade-out {
-  opacity: 0; /* Fade out */
+    opacity: 0; /* Fade out */
 }
