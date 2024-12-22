@@ -6,25 +6,16 @@ import MButt from './MenuButton';
 import { useNavigate } from 'react-router-dom';
 
 const Menu: React.FC = () => {
-    const navigate = useNavigate();
 
     return (
-       <>
-            <div style={{ 
-                backgroundImage: 'url(/home_background.avif)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                height: '400vh', // Full viewport height
-                width: '100vw'   // Full viewport width
+        <>
+            <div style={{
+                backgroundImage: `url(/background.png)`,
+                backgroundSize: 'cover', // Or 'contain'
+                backgroundPosition: 'center', // Adjust as needed
+                minHeight: '100vh' // Ensure the background covers the full viewport
             }}>
-                <div className='Menu'>
-                        <MButt label="Home" onClick={() => navigate('/')} />
-                        <MButt label="Menu" onClick={() => navigate('/menu')} />
-                        <MButt label="About" onClick={() => navigate('/about')} />
-                        <MButt label="Contact" onClick={() => navigate('/contact')} />
-                        <MButt label="Order" onClick={() => navigate('/order')} />
-                </div>
+                {/* Your app content */}
             </div>
         </>
     );

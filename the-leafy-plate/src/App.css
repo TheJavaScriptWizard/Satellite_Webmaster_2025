@@ -1,5 +1,6 @@
 html, body {
     margin: 0;
+    font-size: 16px;
     padding: 0;
     height: 100%; /* Ensure full height */
     overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -22,27 +23,10 @@ html, body {
     -webkit-text-size-adjust: 100%;
 }
 
-.redButton {
-    justify-content: center;
-    background-color: red;
-    border-radius: 50%;
-    width: 25rem;
-    height: 25rem;
-    color: black;
-    font-size: 5rem;
-}
-
-.Menu {
+.Taskbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     gap: 5rem;
 }
 
-.confetti-container {
-    transition: opacity 1s ease; /* Match this duration to the timeout duration */
-}
-
-.confetti-container.fade-out {
-    opacity: 0; /* Fade out */
-}
